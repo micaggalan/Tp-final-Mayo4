@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(219, 209, 209);
+  margin: 0;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  background-size: 800px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.banner {
+  position: relative;
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 100%;
+}
+
+/* Navbar encima */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 55px;
+  display: flex;
+  justify-content: last baseline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #fde6e9;
+  text-decoration: none;
+}
+
+/* Contenido del banner */
+.contenido-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+p {
+  margin: 2px 0;
+}
+.producto {
+  text-align: center;
+  background: rgb(222, 184, 184);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(46, 122, 106, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+
+.producto img {
+  width: 150px;
+  border-radius: 10%;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.redes a {
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  background: #030000;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  background: #ff4c60;
+}

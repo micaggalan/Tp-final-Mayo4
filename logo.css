@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(219, 209, 209);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+path{
+    fill:rgb(105, 135, 199);
+    animation-name: animacion-p3; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite
+}
+@keyframes animacion-p3 {
+    20%{
+        fill: rgb(189, 99, 26);    
+    }
+    40%{
+        fill: rgb(64, 48, 130);
+    }    
+    60%{
+        fill: rgb(115, 28, 28);
+    }    
+    80%{
+        fill: rgb(74, 32, 91);
+    }
+}

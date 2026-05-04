@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(219, 209, 209);
+    margin: 0;    
+    background-attachment: fixed;
+    
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  background-size: 800px;
+  opacity: 0.3; 
+  z-index: -1;
+}
+
+.banner {
+  position: relative;
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 100%;
+}
+
+/* Navbar encima */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 55px;
+  display: flex;
+  justify-content:last baseline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger ;
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #fde6e9;
+  text-decoration: none;
+}
+
+/* Contenido del banner */
+.contenido-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #d39ca3;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.redes a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    background: #030000;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    background: #ff4c60;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.proxfechas {
+    display: grid;
+    place-content: center;
+    color: #ff4c60;
+    margin-top: 30px;
+
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    place-content: center;
+    color: #d39ca3;
+    margin-top: 30px;
+}
+
+p {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: #222;
+}
+
+.fechasanteriores {
+    display: grid;
+    place-content: center;
+    color: #ff4c60;
+    margin-top: 30px;
+}
+
+#tabla {
+    background-color: rgb(233, 229, 219);
+    color: rgb(167, 60, 60);
+    text-align: center;
+    border: 1px solid rgb(167, 60, 60);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flyer,
+.flyer1,
+.flyer2,
+.flyer3,
+.flyer4,
+.flyer5,
+.flyer6,
+.flyer7,
+.flyer8,
+.flyer9,
+.flyer10,
+.flyer11,
+.flyer12,
+.flyer13,
+.flyer14,
+.flyer15,
+.flyer16,
+.flyer17,
+.flyer18,
+.flyer19,
+.flyer20,
+.flyer21,
+.flyer22,
+.flyer23,
+.flyer24,
+.flyer25,
+.flyer26 {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+  max-width: 120px;
+  border-radius: 8px;
+}
+
+.flyer:hover,
+.flyer2:hover,
+.flyer3:hover,
+.flyer4:hover,
+.flyer5:hover,
+.flyer6:hover,
+.flyer7:hover,
+.flyer8:hover,
+.flyer9:hover,
+.flyer10:hover,
+.flyer11:hover,
+.flyer12:hover,
+.flyer13:hover,
+.flyer14:hover,
+.flyer15:hover,
+.flyer16:hover,
+.flyer17:hover,
+.flyer18:hover,
+.flyer19:hover,
+.flyer20:hover,
+.flyer21:hover,
+.flyer22:hover,
+.flyer23:hover,
+.flyer24:hover,
+.flyer25:hover,
+.flyer26:hover {
+    transform: scale(3);
+}
+
+#contador {
+    font-size: 30px;
+    color: #d39ca3;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #d39ca3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff0000;
+    text-shadow: 0 0 10px red, 0 0 20px red;
+}
+.fechasanteriores {
+  display: flex;
+  flex-wrap: wrap; /* baja si no entra */
+  gap: 30px;
+  justify-content: center;
+}
+
+.bloque {
+  width: 300px;
+  text-align: center;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla th {
+  background-color: #222;
+  padding: 10px;
+}
+
+.tabla td {
+  padding: 8px;
+  border-top: 1px solid #333;
+}
+.form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: #d39ca3;
+    margin-top: 30px;
+}
+
+#form-mensaje{
+    resize: vertical;
+    height: 150px;
+}
+#formulario{
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(175, 0, 0);
+}
+#formulario>input, #formulario>textarea{
+    background-color: rgb(233, 233, 207);
+    margin: 5px;
+}
+li{
+    display: grid;
+    place-content: center;
+}
